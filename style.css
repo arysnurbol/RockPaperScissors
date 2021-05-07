@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-weight: 600;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.score-board{ 
+    border: 3px solid #fff;
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background-color: coral;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 50px;
+    border-radius: 2px;
+}
+
+#user-label {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    text-align: center;
+}
+#computer-label {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    text-align: center;
+}
+
+#user-score {
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-left: 40px;
+}
+.seperator {
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#computer-score {
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.result p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice {
+    --border-width: 50%;
+
+    border: 5px solid #fff;
+    margin: 10px;
+    border-radius: var(--border-width);
+    padding: 5px;
+    position: relative;
+}
+.choice:hover {
+    cursor: pointer;
+}
+
